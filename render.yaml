@@ -3,7 +3,7 @@ services:
     name: study-buddy-backend
     env: docker
     plan: free
-    region: singapore # Optional: chose a region or remove to let Render decide
+
     branch: main
     envVars:
       - key: PORT
