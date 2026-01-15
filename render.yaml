@@ -4,7 +4,7 @@ services:
     env: docker
     plan: free
     region: singapore # Optional: chose a region or remove to let Render decide
-    branch: master
+    branch: main
     envVars:
       - key: PORT
         value: 8000
@@ -23,7 +23,7 @@ services:
       - key: PINECONE_HOST
         sync: false
       - key: PINECONE_INDEX_NAME
-        value: study-buddy
+        sync: false
       - key: CLOUDINARY_CLOUD_NAME
         sync: false
       - key: CLOUDINARY_API_KEY
@@ -31,13 +31,13 @@ services:
       - key: CLOUDINARY_API_SECRET
         sync: false
       - key: CHAT_MODEL
-        value: gpt-3.5-turbo
+        sync: false
       - key: SECRET_KEY
         sync: false
       - key: ALGORITHM
-        value: HS256
+        sync: false
       - key: ACCESS_TOKEN_EXPIRE_MINUTES
-        value: 1440
+        sync: false
 
 databases:
   - name: study-buddy-db
