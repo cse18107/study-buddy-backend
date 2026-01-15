@@ -5,7 +5,7 @@ langchain-community
 langchain-openai
 langchain-mistralai
 langchain-pinecone
-pydantic
+pydantic[email]
 python-dotenv
 chromadb
 pypdf
