@@ -4,7 +4,7 @@ from pydantic import BaseModel, EmailStr, Field
 class LearnerCreate(BaseModel):
     name: str
     email: EmailStr
-    password: str = Field(min_length=6)
+    password: str = Field(min_length=6, max_length=64)
 
 class LearnerRead(BaseModel):
     id: UUID
